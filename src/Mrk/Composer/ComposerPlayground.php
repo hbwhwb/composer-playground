@@ -10,7 +10,6 @@ class ComposerPlayground
     public static function postPackageInstall(PackageEvent $event)
     {
         $installedPackage = $event->getOperation()->getPackage();
-        print_r($installedPackage);
-        echo "OK\n";
+        $event->getIO()->write("Show me after INSTALL/UPDATE command");
     }
 }
