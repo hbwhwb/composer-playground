@@ -11,5 +11,6 @@ class ComposerPlayground
     {
         $installedPackage = $event->getOperation()->getPackage();
         print_r($installedPackage);
+        echo "OK\n";
     }
 }
