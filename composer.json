@@ -18,15 +18,16 @@
     },
     "autoload": {
         "psr-0": {
-            "Mrk\\ComposerPlayground": "src"
+            "Mrk": "src",
+            "ComposerScripts": ""
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "Mrk\\Composer\\ComposerPlayground::postInstall"
+            "ComposerScripts\\ComposerPlayground::postInstall"
         ],
         "post-update-cmd": [
-            "Mrk\\Composer\\ComposerPlayground::postInstall"
+            "ComposerScripts\\ComposerPlayground::postInstall"
         ]
     }
 }
