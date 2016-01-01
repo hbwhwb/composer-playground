@@ -20,5 +20,10 @@
         "psr-0": {
             "Mrk\\ComposerPlayground": "src"
         }
+    },
+    "scripts": {
+        "post-package-install": [
+            "Mrk\\Composer\\ComposerPlayground::postPackageInstall"
+        ]
     }
 }
