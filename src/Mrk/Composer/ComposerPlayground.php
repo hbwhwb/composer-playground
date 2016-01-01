@@ -7,9 +7,9 @@ use Composer\Installer\PackageEvent;
 
 class ComposerPlayground
 {
-    public static function postPackageInstall(PackageEvent $event)
+    public static function postInstall(Event $event)
     {
-        $installedPackage = $event->getOperation()->getPackage();
+        //$installedPackage = $event->getOperation()->getPackage();
         $event->getIO()->write("Show me after INSTALL/UPDATE command");
     }
 }

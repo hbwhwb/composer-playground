@@ -22,8 +22,11 @@
         }
     },
     "scripts": {
-        "post-package-install": [
-            "Mrk\\Composer\\ComposerPlayground::postPackageInstall"
+        "post-install-cmd": [
+            "Mrk\\Composer\\ComposerPlayground::postInstall"
+        ],
+        "post-update-cmd": [
+            "Mrk\\Composer\\ComposerPlayground::postInstall"
         ]
     }
 }
